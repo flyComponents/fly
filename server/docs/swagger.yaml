@@ -1,0 +1,227 @@
+basePath: /
+definitions:
+  domain.Agent:
+    properties:
+      id:
+        type: string
+      lastSeen:
+        type: string
+    type: object
+  domain.Task:
+    properties:
+      id:
+        type: string
+      result:
+        type: string
+      status:
+        type: string
+    type: object
+  dto.PhotoResponse:
+    properties:
+      device_id:
+        type: string
+      id:
+        type: string
+      uploaded_at:
+        type: string
+      url:
+        type: string
+    type: object
+host: localhost:8080
+info:
+  contact: {}
+  description: Drone swarm control API
+  title: Fly Server API
+  version: "1.0"
+paths:
+  /agents:
+    get:
+      description: Returns a list of all registered drone agents with their details
+        and last seen timestamp
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/domain.Agent'
+            type: array
+        "500":
+          description: Internal error
+          schema:
+            type: string
+      summary: List all agents
+      tags:
+      - agents
+  /agents/{id}/heartbeat:
+    post:
+      parameters:
+      - description: Agent ID
+        in: path
+        name: id
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+      summary: Agent heartbeat
+      tags:
+      - agents
+  /agents/register:
+    post:
+      consumes:
+      - application/json
+      description: Register new drone agent
+      parameters:
+      - description: Agent data
+        in: body
+        name: agent
+        required: true
+        schema:
+          $ref: '#/definitions/domain.Agent'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.Agent'
+      summary: Register agent
+      tags:
+      - agents
+  /files/{filename}:
+    get:
+      description: Serves uploaded file by filename
+      parameters:
+      - description: File name (e.g. 123.jpg)
+        in: path
+        name: filename
+        required: true
+        type: string
+      produces:
+      - application/octet-stream
+      responses:
+        "200":
+          description: File content
+          schema:
+            type: string
+        "404":
+          description: Not found
+          schema:
+            type: string
+      summary: Download file
+      tags:
+      - files
+  /photos:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Upload photo from drone/device. Requires X-Device-ID header.
+      parameters:
+      - description: Device ID
+        in: header
+        name: X-Device-ID
+        required: true
+        type: string
+      - description: Photo file
+        in: formData
+        name: file
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.PhotoResponse'
+        "400":
+          description: Bad request
+          schema:
+            type: string
+        "500":
+          description: Internal error
+          schema:
+            type: string
+      summary: Upload photo
+      tags:
+      - photos
+  /photos/{id}:
+    get:
+      description: Returns metadata and URL for downloading the photo
+      parameters:
+      - description: Photo ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.PhotoResponse'
+        "404":
+          description: Not found
+          schema:
+            type: string
+        "500":
+          description: Internal error
+          schema:
+            type: string
+      summary: Get photo metadata
+      tags:
+      - photos
+  /photos/owner/{id}:
+    get:
+      description: Returns a list of photos uploaded by a specific device (DeviceID)
+      parameters:
+      - description: Device ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/dto.PhotoResponse'
+            type: array
+        "404":
+          description: Not found
+          schema:
+            type: string
+        "500":
+          description: Internal error
+          schema:
+            type: string
+      summary: List photos by owner/device
+      tags:
+      - photos
+  /tasks:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: Task
+        in: body
+        name: task
+        required: true
+        schema:
+          $ref: '#/definitions/domain.Task'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.Task'
+      summary: Create task
+      tags:
+      - tasks
+swagger: "2.0"

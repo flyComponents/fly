@@ -1,0 +1,138 @@
+2026/02/13 16:24:34 main.go:26: server started
+2026/02/13 16:48:47 main.go:26: server started
+2026/02/13 18:10:45 main.go:31: server started
+2026/02/13 18:12:18 main.go:31: server started
+2026/02/13 18:13:04 main.go:31: server started
+2026/02/21 11:25:32 main.go:31: server started
+2026/02/21 11:40:33 main.go:34: server started
+2026/02/21 11:47:06 main.go:34: server started
+2026/02/21 11:47:26 main.go:34: server started
+2026/02/21 11:49:42 main.go:34: server started
+2026/02/21 11:55:37 main.go:34: server started
+2026/02/21 11:57:06 main.go:34: server started
+2026/02/21 12:01:12 main.go:34: server started
+2026/02/21 12:02:11 main.go:34: server started
+2026/02/28 09:50:13 main.go:34: server started
+2026/03/07 11:01:21 main.go:34: server started
+2026/03/07 11:42:40 main.go:34: server started
+2026/03/07 11:46:09 main.go:34: server started
+2026/03/07 12:03:15 main.go:34: server started
+2026/03/07 12:05:52 main.go:34: server started
+2026/03/07 12:18:57 main.go:34: server started
+2026/03/07 12:21:39 main.go:34: server started
+2026/03/07 12:22:32 main.go:34: server started
+2026/04/03 16:43:29 main.go:34: server started
+2026/04/03 20:31:46 main.go:34: server started
+2026/04/03 20:33:02 main.go:34: server started
+2026/04/03 20:34:17 main.go:34: server started
+2026/04/03 20:34:45 main.go:34: server started
+2026/04/03 20:35:02 main.go:34: server started
+2026/04/03 20:39:53 main.go:34: server started
+2026/04/03 20:43:48 main.go:34: server started
+2026/04/03 20:48:32 udp.go:33: discovery reply 192.168.0.191:48043
+2026/04/03 20:49:03 udp.go:33: discovery reply 192.168.0.191:52647
+2026/04/03 20:56:05 udp.go:33: discovery reply 192.168.0.191:33696
+2026/04/03 20:56:30 udp.go:33: discovery reply 192.168.0.191:57033
+2026/04/03 20:58:44 udp.go:33: discovery reply 192.168.0.191:40574
+2026/04/03 20:59:36 udp.go:33: discovery reply 192.168.0.191:50379
+2026/04/03 21:01:29 udp.go:33: discovery reply 192.168.0.191:45980
+2026/04/04 09:57:52 main.go:34: server started
+2026/04/04 09:58:01 udp.go:33: discovery reply 10.9.33.90:55416
+2026/05/07 15:18:16 main.go:34: server started
+2026/05/07 15:18:19 udp.go:33: discovery reply 10.9.37.110:36281
+2026/05/07 15:26:38 udp.go:33: discovery reply 10.9.37.110:47696
+2026/05/07 15:28:37 udp.go:33: discovery reply 10.9.37.110:39062
+2026/05/07 15:31:15 udp.go:33: discovery reply 10.9.37.110:42252
+2026/05/07 15:40:38 udp.go:33: discovery reply 10.9.37.110:43667
+2026/05/07 15:41:47 main.go:34: server started
+2026/05/07 15:41:48 udp.go:33: discovery reply 10.9.37.110:38581
+2026/05/07 15:42:41 main.go:34: server started
+2026/05/07 15:43:32 main.go:34: server started
+2026/05/07 15:45:18 udp.go:33: discovery reply 10.9.37.110:34781
+2026/05/07 15:46:06 main.go:34: server started
+2026/05/07 15:49:36 udp.go:33: discovery reply 10.9.37.110:49859
+2026/05/07 15:49:54 udp.go:33: discovery reply 10.9.37.110:40161
+2026/05/07 15:53:25 main.go:34: server started
+2026/05/07 15:53:33 udp.go:33: discovery reply 10.9.37.110:52559
+2026/05/07 15:54:12 main.go:34: server started
+2026/05/07 15:54:22 udp.go:33: discovery reply 10.9.37.110:34351
+2026/05/07 15:55:11 main.go:34: server started
+2026/05/07 15:55:17 udp.go:33: discovery reply 10.9.37.110:51133
+2026/05/07 15:55:45 main.go:34: server started
+2026/05/07 15:56:21 main.go:34: server started
+2026/05/07 15:56:23 udp.go:33: discovery reply 10.9.37.110:41348
+2026/05/07 15:58:03 main.go:34: server started
+2026/05/07 15:58:36 main.go:34: server started
+2026/05/07 15:59:41 main.go:34: server started
+2026/05/07 16:00:00 handlers.go:101: create task decode error: json: cannot unmarshal object into Go struct field Task.takeoff of type float64
+2026/05/07 16:00:55 main.go:34: server started
+2026/05/07 16:00:57 handlers.go:101: create task decode error: json: cannot unmarshal object into Go struct field Task.takeoff of type float64
+2026/05/07 16:05:35 udp.go:33: discovery reply 10.9.37.110:59891
+2026/05/07 16:49:15 main.go:34: server started
+2026/05/07 16:49:38 udp.go:33: discovery reply 192.168.0.101:55471
+2026/05/07 16:49:57 handlers.go:127: ssh execute error: open /home/user/.ssh/id_rsa: no such file or directory
+2026/05/07 16:50:40 main.go:34: server started
+2026/05/07 16:50:44 udp.go:33: discovery reply 192.168.0.101:53507
+2026/05/07 16:50:59 handlers.go:127: ssh execute error: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none publickey], no supported methods remain
+2026/05/07 16:57:54 main.go:34: server started
+2026/05/07 16:58:06 main.go:34: server started
+2026/05/07 16:58:11 udp.go:33: discovery reply 192.168.0.101:57441
+2026/05/07 16:58:23 handlers.go:127: ssh execute error: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none publickey], no supported methods remain
+2026/05/07 16:58:55 main.go:34: server started
+2026/05/07 16:59:01 udp.go:33: discovery reply 192.168.0.101:60996
+2026/05/07 16:59:08 handlers.go:127: ssh execute error: open ~/.ssh/id_rsa: no such file or directory
+2026/05/07 16:59:29 main.go:34: server started
+2026/05/07 16:59:36 udp.go:33: discovery reply 192.168.0.101:52098
+2026/05/07 16:59:44 handlers.go:127: ssh execute error: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none publickey], no supported methods remain
+2026/05/07 17:03:16 main.go:34: server started
+2026/05/07 17:03:32 handlers.go:127: ssh execute error: file does not exist
+2026/05/07 17:04:23 main.go:34: server started
+2026/05/07 17:04:29 udp.go:33: discovery reply 192.168.0.101:36010
+2026/05/07 17:04:42 handlers.go:127: ssh execute error: file does not exist
+2026/05/07 17:07:47 main.go:34: server started
+2026/05/07 17:07:54 udp.go:33: discovery reply 192.168.0.101:47987
+2026/05/07 17:08:07 handlers.go:129: ssh execute error: Process exited with status 2 | output: bash: line 1: /home/ubuntu/mission.json: No such file or directory
+bash: -c: line 9: syntax error near unexpected token `&&'
+bash: -c: line 9: ` && cd /home/ubuntu && ./venv/bin/python run_mission.py mission.json'
+
+2026/05/07 17:10:54 main.go:34: server started
+2026/05/07 17:11:00 udp.go:33: discovery reply 192.168.0.101:53086
+2026/05/07 17:11:12 handlers.go:129: ssh execute error: Process exited with status 2 | output: 
+2026/05/07 17:14:00 main.go:34: server started
+2026/05/07 17:14:08 udp.go:33: discovery reply 192.168.0.101:56027
+2026/05/07 17:14:28 handlers.go:129: ssh execute error: Process exited with status 2 | output: 
+2026/05/07 17:15:33 main.go:34: server started
+2026/05/07 17:15:35 udp.go:33: discovery reply 192.168.0.101:42277
+2026/05/07 17:16:47 handlers.go:129: ssh execute error: Process exited with status 2 | output: 
+2026/05/07 17:17:08 main.go:34: server started
+2026/05/07 17:17:12 main.go:34: server started
+2026/05/07 17:17:20 udp.go:33: discovery reply 192.168.0.101:40641
+2026/05/07 17:17:33 handlers.go:129: ssh execute error: Process exited with status 2 | output: 
+2026/05/07 17:19:58 main.go:34: server started
+2026/05/07 17:20:03 udp.go:33: discovery reply 192.168.0.101:34779
+2026/05/07 17:20:17 handlers.go:129: ssh execute error: Process exited with status 2 | output: 
+2026/05/07 17:21:28 main.go:34: server started
+2026/05/07 17:21:35 udp.go:33: discovery reply 192.168.0.101:51481
+2026/05/07 17:22:04 handlers.go:129: ssh execute error: Process exited with status 2 | output: 
+2026/05/07 17:24:36 main.go:34: server started
+2026/05/07 17:24:41 udp.go:33: discovery reply 192.168.0.101:36291
+2026/05/07 17:24:56 handlers.go:129: ssh execute error: Process exited with status 2 | output: 
+2026/05/07 17:26:02 main.go:34: server started
+2026/05/07 17:26:23 handlers.go:129: ssh execute error: Process exited with status 2 | output: bash: -c: line 9: syntax error near unexpected token `&&'
+bash: -c: line 9: ` && bash -lc 'cd /home/user/kopters/src/drone && ./venv/bin/python drone.py /dev/ttyACM0 0.45''
+
+2026/05/07 17:28:06 main.go:34: server started
+2026/05/07 17:28:36 handlers.go:129: ssh execute error: Process exited with status 2 | output: 
+2026/05/07 17:29:55 main.go:34: server started
+2026/05/07 17:30:06 handlers.go:129: ssh execute error: Process exited with status 2 | output: 
+2026/05/07 17:30:32 main.go:34: server started
+2026/05/07 17:41:28 main.go:34: server started
+2026/05/07 17:41:48 udp.go:33: discovery reply 192.168.0.101:42431
+2026/05/07 17:42:37 udp.go:33: discovery reply 192.168.0.101:37602
+2026/05/28 16:53:30 main.go:34: server started
+2026/05/28 16:53:38 udp.go:33: discovery reply 10.9.35.50:36316
+2026/05/28 17:00:12 main.go:34: server started
+2026/05/28 17:00:19 udp.go:33: discovery reply 10.9.35.50:52981
+2026/06/09 12:35:17 main.go:34: server started
+2026/06/09 12:35:46 udp.go:33: discovery reply 10.9.37.39:52234
+2026/06/09 14:16:40 main.go:34: server started
